@@ -1,0 +1,95 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cake Order Form</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>  
+	<div class="wrapper">
+		<section>
+			<h1>Order your cake</h1>
+			<p>Fill out the form below to place an order for your cake today.</p>
+            <form method="POST" action="">
+             
+<!--Need a link from backend developer to make form work and put into 'action'-->
+
+            <fieldset>
+			<legend>Your contact information</legend>
+			<label for="name">Your name</label>
+            <input type="text" id="name" name="name">
+
+			<label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone">
+
+			<label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            </fieldset>
+
+            <fieldset>
+			<legend>Your order</legend>
+			<label for="date">Requested  date</label>
+            <input type="date" id="date" name="date">
+
+
+            <label for="qty">How many cakes would you like?</label>
+            <input type="number" id="qty" name="qty" min="1" max="5">
+
+			<p>What type of filling do you prefer?</p>
+            <label>
+				<input type="radio" name="filling" value="vanilla" checked> Vanilla Buttercreme</label>
+              
+                <label>
+                <input type="radio" name="filling" value="chocolate" > Chocolate Buttercreme</label>
+
+                <label>
+                <input type="radio" name="filling" value="strawberry"> Stawberry Delight</label>
+
+                <label>
+                <input type="radio" name="filling" value="Lemon" > Twangy Lemon</label>
+            </label>
+
+			<label for="frosting">What type of frosting would you like?</label>
+				<select id="frosting" name="frosting">
+                    <option selected>Select one...</option>
+					<option value="cream">Whipped Cream</option>
+					<option value="chocvelv">Chocolate Velvetop</option>
+					<option value="vanillabutter">Vanilla Buttercreme</option>
+                </select>
+
+			<label for="comments">Special requests:</label>
+            <textarea id="comments" name="comments"></textarea>
+
+			<label>Add me to your email list
+            <input type="checkbox" id="subscribe" name="subscribe" value="subscribe"checked>
+        </label>
+
+        <input id="send_to" type="hidden" name="send_to" value="suecaina@hotmail.com">
+
+        <button type="submit">Submit</button>
+    </section>
+    
+        <aside>
+        <h3>Our Location</h3>
+			<address>
+                1581 London Rd &middot;
+				Norbury &middot;
+              London SW16 4AA
+			</address>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9953.857924527601!2d-0.13315323022456896!3d51.4128938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760693a2109225%3A0x1fd8cc28d2e98951!2sCake%20Zone!5e0!3m2!1sen!2suk!4v1614029594504!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </aside>
+ 
+
+
+        </fieldset>
+    </form>
+    
+</div>
+
+
+	
+			
+	
+</body>
+</html>
